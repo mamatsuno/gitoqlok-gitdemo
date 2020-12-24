@@ -1,0 +1,32 @@
+{
+  "qInfos": [
+    {
+      "qId": "LoadModel",
+      "qType": "LoadModel"
+    },
+    {
+      "qId": "PZUFNfd",
+      "qType": "auto-chart"
+    },
+    {
+      "qId": "QFAQkL",
+      "qType": "auto-chart"
+    },
+    {
+      "qId": "b56f6af7-0599-4536-ba1e-a6b83b38affc",
+      "qType": "sheet"
+    },
+    {
+      "qId": "fb159350-544b-402a-b8cf-b2c957b451a3",
+      "qType": "appprops"
+    },
+    {
+      "qId": "gQrrP",
+      "qType": "piechart"
+    },
+    {
+      "qId": "jhJAw",
+      "qType": "auto-chart"
+    }
+  ]
+}
