@@ -33,12 +33,12 @@
         "name": "PZUFNfd",
         "type": "table",
         "col": 12,
-        "row": 6,
+        "row": 0,
         "colspan": 12,
         "rowspan": 6,
         "bounds": {
-          "y": 50,
           "x": 50,
+          "y": 0,
           "width": 50,
           "height": 50
         }
@@ -46,13 +46,13 @@
       {
         "name": "jhJAw",
         "type": "piechart",
-        "col": 12,
-        "row": 0,
+        "col": 0,
+        "row": 6,
         "colspan": 12,
         "rowspan": 6,
         "bounds": {
-          "y": 0,
-          "x": 50,
+          "x": 0,
+          "y": 50,
           "width": 50,
           "height": 50
         }
@@ -60,13 +60,13 @@
       {
         "name": "QFAQkL",
         "type": "auto-chart",
-        "col": 0,
+        "col": 12,
         "row": 6,
         "colspan": 12,
         "rowspan": 6,
         "bounds": {
+          "x": 50,
           "y": 50,
-          "x": 0,
           "width": 50,
           "height": 50
         }
@@ -289,7 +289,6 @@
           }
         },
         "qUndoExclude": {
-          "hashCode": 2135436827,
           "generated": {
             "qHyperCubeDef": {
               "qDimensions": [
@@ -313,11 +312,11 @@
                     "qNumberPresentations": [],
                     "qActiveField": 0,
                     "autoSort": true,
-                    "cId": "zmeF",
+                    "cId": "GmfTYs",
                     "othersLabel": "その他"
                   },
                   "qOtherTotalSpec": {
-                    "qOtherMode": "OTHER_OFF",
+                    "qOtherMode": "OTHER_COUNTED",
                     "qOtherCounted": {
                       "qv": "10"
                     },
@@ -360,7 +359,7 @@
                     "qActiveExpression": 0,
                     "qExpressions": [],
                     "autoSort": true,
-                    "cId": "Xesgmp",
+                    "cId": "SbTQPD",
                     "numFormatFromTemplate": true
                   },
                   "qSortBy": {
@@ -397,15 +396,15 @@
                 }
               ],
               "qInterColumnSortOrder": [
-                0,
-                1
+                1,
+                0
               ],
               "qSuppressMissing": true,
               "qInitialDataFetch": [
                 {
                   "qLeft": 0,
                   "qTop": 0,
-                  "qWidth": 17,
+                  "qWidth": 10,
                   "qHeight": 500
                 }
               ],
@@ -423,10 +422,6 @@
               "qColumnOrder": [],
               "qExpansionState": []
             },
-            "refLine": {
-              "refLines": [],
-              "dimRefLines": []
-            },
             "showTitles": true,
             "title": "大分類別売上",
             "subtitle": "",
@@ -435,21 +430,28 @@
             "showDetails": false,
             "showDisclaimer": true,
             "qStateName": "",
-            "components": [],
-            "barGrouping": {
-              "grouping": "grouped"
+            "components": [
+              {
+                "key": "slices",
+                "style": {
+                  "strokeWidth": "none",
+                  "strokeColor": {
+                    "index": -1,
+                    "color": "#FFFFFF"
+                  },
+                  "cornerRadius": 0,
+                  "innerRadius": 0.55
+                }
+              }
+            ],
+            "donut": {
+              "showAsDonut": false
             },
-            "orientation": "vertical",
-            "scrollbar": "miniChart",
-            "scrollStartPos": 0,
-            "gridLine": {
-              "auto": true,
-              "spacing": 2
-            },
+            "dimensionTitle": true,
             "dataPoint": {
-              "showLabels": false,
-              "showSegmentLabels": false,
-              "showTotalLabels": true
+              "auto": true,
+              "labelMode": "share",
+              "labelValueMode": "arc"
             },
             "color": {
               "auto": true,
@@ -478,109 +480,25 @@
               "dock": "auto",
               "showTitle": true
             },
-            "dimensionAxis": {
-              "continuousAuto": true,
-              "show": "all",
-              "label": "auto",
-              "dock": "near",
-              "axisDisplayMode": "auto",
-              "maxVisibleItems": 10
-            },
-            "preferContinuousAxis": true,
-            "measureAxis": {
-              "show": "all",
-              "dock": "near",
-              "spacing": 1,
-              "autoMinMax": true,
-              "minMax": "min",
-              "min": 0,
-              "max": 10
-            },
             "tooltip": {
               "auto": true,
               "hideBasic": false,
               "data": {}
             },
             "qInfo": {
-              "qType": "barchart"
+              "qType": "piechart"
             },
-            "visualization": "barchart",
-            "version": "1.6.0",
-            "showMiniChartForContinuousAxis": true,
-            "isRecommended": true,
+            "visualization": "piechart",
+            "version": "1.5.0",
+            "isRecommended": false,
             "qLayoutExclude": {
               "disabled": {},
               "quarantine": {}
-            },
-            "recommendation": {
-              "options": {},
-              "analysis": {
-                "analysis": "rank",
-                "analysisGroup": "rank",
-                "titleTemplate": [
-                  {
-                    "msgId": "cao.chart.rank.2.title",
-                    "msgParams": {
-                      "$$1": 1,
-                      "$$2": 0
-                    }
-                  }
-                ],
-                "dims": [
-                  {
-                    "expr": "[商品大分類]",
-                    "cType": "eField",
-                    "field": "商品大分類",
-                    "fieldStats": {
-                      "distinctCount": 8,
-                      "dataType": "string"
-                    }
-                  }
-                ],
-                "msrs": [
-                  {
-                    "expr": "=Sum([売上])",
-                    "cType": "eField",
-                    "field": "売上",
-                    "fieldStats": {
-                      "dataType": "integer",
-                      "valueRange": {
-                        "min": 597442948,
-                        "max": 1062685079
-                      },
-                      "classification": [
-                        "measure"
-                      ]
-                    }
-                  }
-                ]
-              },
-              "isExtendedAnalysis": false,
-              "matchRecord": {
-                "analysisPrecedentId": "P-Rank",
-                "matches": [
-                  {
-                    "slot": "$$1",
-                    "slotRole": "dimension",
-                    "field": "商品大分類"
-                  },
-                  {
-                    "slot": "$$2",
-                    "slotRole": "measure",
-                    "field": "売上",
-                    "aggr": "Sum"
-                  }
-                ],
-                "precedentStats": {
-                  "matchedFields": 0,
-                  "uniquePrecedents": 0
-                }
-              },
-              "relevance": 1,
-              "analysisIntentRelevance": 0.09000000000000001
             }
-          }
-        }
+          },
+          "hashCode": -2126577950
+        },
+        "preferredChart": "piechart"
       },
       "qChildren": []
     },
@@ -2793,7 +2711,7 @@
               ]
             },
             "showTitles": true,
-            "title": "",
+            "title": "明細表示",
             "subtitle": "",
             "footnote": "",
             "disableNavMenu": false,
