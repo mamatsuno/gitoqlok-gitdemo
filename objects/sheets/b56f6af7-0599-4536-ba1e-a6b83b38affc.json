@@ -32,13 +32,13 @@
       {
         "name": "PZUFNfd",
         "type": "table",
-        "col": 0,
+        "col": 12,
         "row": 6,
         "colspan": 12,
         "rowspan": 6,
         "bounds": {
           "y": 50,
-          "x": 0,
+          "x": 50,
           "width": 50,
           "height": 50
         }
@@ -60,13 +60,13 @@
       {
         "name": "QFAQkL",
         "type": "auto-chart",
-        "col": 12,
+        "col": 0,
         "row": 6,
         "colspan": 12,
         "rowspan": 6,
         "bounds": {
           "y": 50,
-          "x": 50,
+          "x": 0,
           "width": 50,
           "height": 50
         }
@@ -2165,7 +2165,7 @@
           }
         },
         "showTitles": true,
-        "title": "",
+        "title": "明細表示",
         "subtitle": "",
         "footnote": "",
         "disableNavMenu": false,
@@ -2516,9 +2516,6 @@
                 -1
               ]
             },
-            "search": {
-              "sorting": "auto"
-            },
             "showTitles": true,
             "title": "",
             "subtitle": "",
@@ -2526,21 +2523,6 @@
             "disableNavMenu": false,
             "showDetails": false,
             "qStateName": "",
-            "components": [],
-            "totals": {
-              "show": true,
-              "position": "noTotals",
-              "label": "合計"
-            },
-            "scrolling": {
-              "horizontal": true,
-              "keepFirstColumnInView": false,
-              "keepFirstColumnInViewTouch": false
-            },
-            "multiline": {
-              "wrapTextInHeaders": true,
-              "wrapTextInCells": true
-            },
             "qInfo": {
               "qType": "table"
             },
@@ -2586,6 +2568,24 @@
                   }
                 ]
               }
+            },
+            "components": [],
+            "search": {
+              "sorting": "auto"
+            },
+            "totals": {
+              "show": true,
+              "position": "noTotals",
+              "label": "合計"
+            },
+            "scrolling": {
+              "horizontal": true,
+              "keepFirstColumnInView": false,
+              "keepFirstColumnInViewTouch": false
+            },
+            "multiline": {
+              "wrapTextInHeaders": true,
+              "wrapTextInCells": true
             }
           },
           "hashCode": 1948933517
